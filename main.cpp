@@ -19,6 +19,12 @@ int main ()
     string_1 += string_2 ;
     //string_1.append (string_2 ) ;
     dbg.write ( "\r\nstring_1 after merging: " , sizeof ( "\r\nstring_1 after merging: " ) ) ;
+    dbg.write ( string_1.c_str() , string_1.length() ) ;
+    
+    char c = 'T' ;
+    string_1.push_back (c) ;
+    dbg.write ( "\r\nstring_1 after push: " , sizeof ( "\r\nstring_1 after push: " ) ) ;
     dbg.write ( &string_1 , sizeof ( string_1 ) ) ;
+
 }
 
